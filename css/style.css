@@ -1,0 +1,2054 @@
+* {
+	font-family: "Poppins-Regular";
+	box-sizing: border-box;
+}
+@font-face {
+	font-family: "Poppins-Regular";
+	src: url('../fonts/Poppins/Poppins-Regular.ttf');
+}
+@font-face {
+	font-family: "Poppins-SemiBold";
+	src: url('../fonts/Poppins/Poppins-SemiBold.ttf');
+}
+a:hover, a:focus {
+	text-decoration:none !important;
+	transition: all 0.3s ease 0s;
+	transition: background 0.3s ease 0s, width 0.2s ease 0s;
+}
+li,ul,ol,a,h4 {
+    margin: 0px 0px;
+    padding: 0px 0px;
+}
+html {
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box
+}
+*,
+*:before,
+*:after {
+    -webkit-box-sizing: inherit;
+    box-sizing: inherit
+}
+html {
+    font-size: 0.9em
+}
+* {
+    font-family: "Poppins-Regular";
+}
+.text {
+    font-family: "Poppins-Regular";
+}
+p {
+    line-height: 1.5em;
+    color: #636B6F
+}
+@media (min-width: 768px) {
+    p {
+        line-height: 1.3em
+    }
+}
+h1,
+h2,
+h3 {
+    font-family: "Poppins-Regular";
+    color: #636B6F
+}
+h2 {
+    font-size: 2rem;
+    margin: 1.5em 0 1em
+}
+a,
+.link-more {
+    display: inline-block;
+    font-size: 1rem;
+    font-weight: 300;
+    color: #636B6F;
+    cursor: pointer
+}
+.button-add::before,
+.button-add-right::after,
+.button-handout::before,
+.button-archive::before,
+.button-login::before,
+.form-addTags span .delete::after,
+.navigation .user .settings ul li a::before,
+.card-main table .title::before,
+.viewPrayer form div .edit::after,
+.planner-service-edit .plan-edit .container .categories a.active::after {
+    display: inline-block;
+    font: normal normal normal 14px/1 FontAwesome;
+    font-size: inherit;
+    text-rendering: auto;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale
+}
+button,
+.button,
+.button-add,
+.button-add-right,
+.button-handout,
+.button-archive,
+.button-login,
+.button-orange,
+.button-green,
+.button-gray,
+a.button,
+a.button-add,
+a.button-add-right,
+a.button-handout,
+a.button-archive,
+a.button-login,
+a.button-orange,
+a.button-green,
+a.button-gray,
+[type=submit],
+[type=button] {
+    display: inline-block;
+    background-color: #0577FF;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    text-decoration: none;
+    font-weight: 400;
+    font-size: .95rem;
+    font-family: "Open Sans", sans-serif;
+    padding: 1rem 1.5rem;
+    vertical-align: middle;
+    white-space: nowrap;
+    cursor: pointer;
+    line-height: 1;
+    margin: .25rem 0
+}
+button:hover,
+.button:hover,
+.button-add:hover,
+.button-add-right:hover,
+.button-handout:hover,
+.button-archive:hover,
+.button-login:hover,
+.button-orange:hover,
+.button-green:hover,
+.button-gray:hover,
+a.button:hover,
+a.button-add:hover,
+a.button-add-right:hover,
+a.button-handout:hover,
+a.button-archive:hover,
+a.button-login:hover,
+a.button-orange:hover,
+a.button-green:hover,
+a.button-gray:hover,
+[type=submit]:hover,
+[type=button]:hover {
+    background-color: #006beb
+}
+button:disabled,
+.button:disabled,
+.button-add:disabled,
+.button-add-right:disabled,
+.button-handout:disabled,
+.button-archive:disabled,
+.button-login:disabled,
+.button-orange:disabled,
+.button-green:disabled,
+.button-gray:disabled,
+a.button:disabled,
+a.button-add:disabled,
+a.button-add-right:disabled,
+a.button-handout:disabled,
+a.button-archive:disabled,
+a.button-login:disabled,
+a.button-orange:disabled,
+a.button-green:disabled,
+a.button-gray:disabled,
+[type=submit]:disabled,
+[type=button]:disabled {
+    background-color: #99c8ff;
+    cursor: not-allowed
+}
+.button-add::before {
+    vertical-align: middle;
+    content: "\f067";
+    margin: 0 1em 0 0
+}
+.button-add-right::after {
+    content: "\f067";
+    margin: 0 0 0 1rem
+}
+.button-handout {
+    background-color: #09C851
+}
+.button-handout::before {
+    vertical-align: middle;
+    content: "\f1e0";
+    margin: 0 1em 0 0
+}
+.button-handout:hover {
+    background-color: #08b047
+}
+.button-archive {
+    background-color: #FF4000
+}
+.button-archive::before {
+    vertical-align: middle;
+    content: "\f187";
+    margin: 0 1em 0 0
+}
+.button-archive:hover {
+    background-color: #e63a00
+}
+.button-login {
+    padding-top: 0.8em;
+    padding-bottom: 0.8em;
+    background-color: #0A65D9
+}
+.button-login::before {
+    font-size: 1.5em;
+    vertical-align: middle;
+    content: "\f090";
+    margin: 0 1em 0 0
+}
+.button-login:hover {
+    background-color: #006beb
+}
+.button-orange {
+    background-color: #FF4000
+}
+.button-orange:hover {
+    background-color: #e63a00
+}
+.button-green {
+    background-color: #09C851
+}
+.button-green:hover {
+    background-color: #08b047
+}
+.button-gray {
+    background-color: #636B6F
+}
+.button-gray:hover {
+    background-color: #575e62
+}
+[type=color],
+[type=date],
+[type=datetime],
+[type=datetime-local],
+[type=email],
+[type=month],
+[type=number],
+[type=password],
+[type=search],
+[type=tel],
+[type=text],
+[type=url],
+[type=week],
+[type=time],
+select,
+textarea {
+    display: block;
+    padding: .5rem;
+    background: transparent;
+    vertical-align: middle;
+    width: 100%;
+    max-width: 100%;
+    border: 1px solid #cdcdcd;
+    border-radius: 4px;
+    font-size: .95rem
+}
+select {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABIAAAAJCAYAAAA/33wPAAAAvklEQVQoFY2QMQqEMBBFv7ERa/EMXkGw11K8QbDXzuN4BHv7QO6ifUgj7v4UAdlVM8Uwf+b9YZJISnlqrfEUZVlinucnBGKaJgghbiHOyLyFKIoCbdvecpyReYvo/Ma2bajrGtbaC58kCdZ1RZ7nl/4/4d5EsO/7nzl7IUtodBexMMagaRrs+06JLMvcNWmaOv2W/C/TMAyD58dxROgSmvxFFMdxoOs6lliWBXEcuzokXRbRoJRyvqqqQvye+QDMDz1D6yuj9wAAAABJRU5ErkJggg==) 100% no-repeat;
+    line-height: 1
+}
+label {
+    font-weight: 600;
+    font-size: .9rem;
+    display: block;
+    margin: .5rem 0
+}
+form {
+    color: #636B6F
+}
+form>div {
+    margin: 0 0 1rem
+}
+.form-addTags {
+    position: relative
+}
+.form-addTags .tags {
+    display: inline-block
+}
+.form-addTags span {
+    display: inline-block;
+    background: #CCE3FF;
+    border-radius: 5px;
+    padding: 0 0 0 0.7em
+}
+.form-addTags span .delete {
+    padding: 0.7em;
+    margin: 0 0 0.2em 0.5em;
+    background: transparent
+}
+.form-addTags span .delete::after {
+    content: "\f00d";
+    color: #636B6F
+}
+.form-addTags input {
+    display: inline-block;
+    width: 10rem
+}
+.form-addTags input:focus {
+    background: rgba(204, 227, 255, 0.5);
+    border: none !important;
+    outline: none
+}
+.form-addTags input:focus+.autocomplete {
+    display: block !important
+}
+.form-addTags .autocomplete {
+    display: none;
+    background: #fff;
+    -webkit-box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.25);
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.25);
+    position: absolute;
+    width: 100%;
+    border-radius: 5px;
+    list-style: none;
+    padding: 0
+}
+.form-addTags .autocomplete li {
+    padding: 1rem
+}
+.form-addTags .autocomplete li:hover {
+    cursor: pointer;
+    background: #e6e6e6
+}
+body {
+    background-color: #F5F8FA
+}
+.navigation {
+    position: fixed;
+    overflow-y: scroll;
+    width: 230px;
+    padding: 0.5rem 0;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    background-color: #0A65D9;
+    color: #fff
+}
+.navigation::-webkit-scrollbar {
+    width: 0px
+}
+.navigation .user {
+    width: 100%;
+    padding: 1rem 0 0 0;
+    text-align: center;
+	margin-bottom: 25px;
+}
+.navigation .user a {
+    color: #fff;
+    text-decoration: none
+}
+.navigation .user img {
+    display: inline-block;
+    width: 70%;
+    margin: 0 0 0.5rem 0;
+    height: auto;
+    border-radius: 50%;
+    -webkit-box-shadow: 0px 0px 15px rgba(99, 107, 111, 0.25);
+    box-shadow: 0px 0px 15px rgba(99, 107, 111, 0.25)
+}
+.navigation .user p {
+    margin: 0
+}
+.navigation .user p a {
+    font-weight: 700
+}
+.navigation .user span {
+    display: block;
+    margin: 0 0 1rem 0
+}
+.navigation .user .settings {
+    display: none;
+    padding: 2em 2rem;
+    margin: 15px 0 0px;
+    background-color: #0577FF;
+    text-align: left;
+    list-style: none
+}
+.navigation .user .settings.active {
+    display: block
+}
+.navigation .user .settings ul {
+    padding: 0.5em 0 0 1.5em;
+    list-style: none
+}
+.navigation .user .settings ul li a::before {
+    position: absolute;
+    margin: 0.2em 0 0 -1.5em;
+    content: "\f013"
+}
+.navigation .user .settings li {
+    padding: 0.5em 0
+}
+.navigation .user .settings>li,
+.navigation .user .settings>li {
+    font-weight: 700
+}
+.fa-sign-out:before {
+    margin: 0.2em 0.5em 0 0em;
+}
+.navigation .menu {
+    list-style: none;
+    padding: 0;
+    margin: 0
+}
+.navigation .menu a {
+    display: block;
+    width: 100%;
+    padding: 1em 2rem;
+    color: #fff;
+    text-decoration: none
+}
+.navigation .menu a img {
+    vertical-align: middle
+}
+.navigation .menu>li .title {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center
+}
+.navigation .menu>li .title span {
+    margin: 0 0 0 0.5em
+}
+.navigation .menu>li .title .config {
+    display: none;
+    font-size: 1rem;
+    width: 2em;
+    -webkit-transform-origin: 60% 50%;
+    transform-origin: 60% 50%;
+    -webkit-transition: -webkit-transform 0.5s ease;
+    transition: -webkit-transform 0.5s ease;
+    transition: transform 0.5s ease;
+    transition: transform 0.5s ease, -webkit-transform 0.5s ease
+}
+.navigation .menu>li .title .config:hover {
+    -webkit-transform: scale(1.5);
+    transform: scale(1.5)
+}
+.navigation .menu>li ul {
+    display: none;
+    border-bottom: 1px solid #0577FF
+}
+.navigation .menu>li ul:last-of-type {
+    border-bottom: none
+}
+.navigation .menu>li:hover,
+.navigation .menu>li.active {
+    background: #0577FF
+}
+.navigation .menu>li.active .config {
+    display: block
+}
+.navigation .menu>li.active ul {
+    display: block
+}
+.navigation .menu ul {
+    list-style: none;
+    
+    padding: 0
+}
+.navigation .menu ul li:hover {
+	background-color: #0577FF;
+}
+.navigation .menu ul li.active {
+	background-color: #0577FF;
+}
+li.drp.active > ul > li {
+    display: block !important;
+}
+.navigation .menu ul a.active {
+    /* font-weight: 700; */
+    background-color: #0577FF;
+}
+.navigation .menu ul a:hover , li.drp.active > ul > li a.active {
+    background-color: rgba(255, 255, 255, 0.05)
+}
+.navigation .logo {
+    width: 100%;
+    padding: 2rem 1rem;
+    bottom: 0
+}
+.navigation .menu ul li a span {
+    display: inline !important;
+}
+@media only screen and (max-width: 768px) {
+    body.active-sm-navigation .navigation {
+        width: 125px;
+    }
+    body.active-sm-navigation .navigation .menu a {
+        padding-left: 0;
+        padding-right: 0
+    }
+    body.active-sm-navigation .navigation .title img {
+        width: 60%;
+        display: block;
+        margin: 0 auto
+    }
+    body.active-sm-navigation .navigation .visible-desktop {
+        display: none !important
+    }
+	.navigation .menu ul li a {
+		padding-left: 25px !important;
+		font-size: 12px;
+	}
+	i.tree-indicator {
+		top: 15px;
+		font-size: 10px;
+	}
+	.wrapper_page {
+		max-width: 95% !important;
+	}
+}
+@media only screen and (max-width: 445px) {
+	.navigation .menu ul li a {
+		padding-left: 5px !important;
+	}
+	.navigation .menu ul li a span {
+		display: none !important;
+	}
+	body.active-sm-navigation .navigation {
+		width: 55px;
+	}
+	i.tree-indicator {
+		right: 8px;
+	}
+}
+@media only screen and (max-width: 345px) {
+	body.active-sm-navigation .navigation {
+		width: 40px;
+	}
+}
+.main-header {
+    padding: 1rem 0
+}
+.main-header .title-actions {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap
+}
+.main-header .title-actions .actions {
+    width: 100%;
+    display: block;
+    margin: 0 0 0 auto
+}
+.main-header .title-actions .actions button {
+    width: 100%;
+    margin: 0.5em 0.5em
+}
+@media (min-width: 768px) {
+    .main-header .title-actions .actions button {
+        width: auto
+    }
+}
+@media (min-width: 768px) {
+    .main-header .title-actions .actions {
+        width: auto
+    }
+}
+.main-header .sort-navigation ul {
+    list-style: none;
+    padding: 0;
+    display: none;
+    text-align: center;
+    margin: 2rem 0
+}
+@media (min-width: 768px) {
+    .main-header .sort-navigation ul {
+        display: block
+    }
+}
+.main-header .sort-navigation ul li {
+    display: inline-block;
+    margin: 0.5em 1.5em
+}
+.main-header .sort-navigation ul li a {
+    width: 100%;
+    text-decoration: none
+}
+.main-header .sort-navigation ul li a.active {
+    background-color: #0577FF;
+    color: #fff;
+    border-radius: 1em;
+    padding: 0.3em 1em
+}
+@media (min-width: 768px) {
+    .main-header .sort-navigation label,
+    .main-header .sort-navigation select {
+        display: none
+    }
+}
+body {
+    overflow-x: hidden
+}
+.wrapper {
+    width: 100%;
+    max-width: 100%;
+    padding: 0 1rem;
+    margin: 0 auto;
+}
+body.active-sm-navigation .page-content {
+    width: calc(100% - 50px);
+    margin: 0 0 0 auto
+}
+.page-content {
+    margin: 0 0 0 230px;
+    padding: 0 0 4rem;
+    width: calc(100% - 50px) !important
+}
+@media (min-width: 768px) {
+    .page-content {
+        width: calc(100% - 230px) !important
+    }
+}
+@media only screen and (max-width: 768px) {
+	.page-content {
+        width: calc(100% - 125px) !important
+    }
+	.card-main {
+		padding: 0.6rem !important;
+	}
+}
+@media only screen and (max-width: 445px) {
+	.page-content {
+        width: calc(100% - 55px) !important
+    }
+}
+@media only screen and (max-width: 345px) {
+	.page-content {
+        width: calc(100% - 40px) !important
+    }
+}
+.card,
+.card-main,
+.card-secundary,
+body.dashboard .tools article,
+body.dashboard section.help {
+    background-color: #fff;
+    border-radius: 5px;
+    width: 100%;
+    padding: 2rem
+}
+.card-main .input-search {
+    display: block;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    width: 35%;
+    margin: 1rem 0 2rem auto
+}
+.card-main table {
+    width: 100%
+}
+.card-main table td {
+    /* display: none; */
+    padding: 1rem 2rem;
+    color: #636B6F;
+    background-color: #FAFAFA
+}
+.card-main table .title {
+    background-color: #fff
+}
+.card-main table .title a {
+    font-size: 1.2rem;
+    font-weight: 700
+}
+.card-main table .title span {
+    display: block
+}
+.card-main table .title::before {
+    float: right;
+    display: none;
+    margin: 0.5em 0 0;
+    font-size: 1.5rem;
+    content: "\f0da"
+}
+.card-main table .actions .desktop {
+	display: inline-flex;
+    text-align: center
+}
+.card-main table .actions .desktop a {
+    margin: 0 0.5rem
+}
+.card-main table .actions .mobile {
+    display: none;
+    text-align: center
+}
+.card-main table .actions .mobile button {
+    width: 40%;
+    min-width: 100px
+}
+@media (min-width: 1024px) {
+    .card-main table .checkbox,
+    .card-main table td , .card-main table th {
+        display: table-cell;
+        background-color: transparent;
+        padding: 1rem 1rem
+    }
+    .card-main table .checkbox span,
+    .card-main table td span {
+        display: none
+    }
+}
+@media only screen and (max-width: 1024px) {
+    /* .card-main {
+        padding: 0
+    } */
+    .card-main .input-search {
+        display: none
+    }
+    .card-main table tr {
+        border-bottom: 2px solid #F5F8FA
+    }
+    .card-main table td {
+        /* display: none */
+    }
+    .card-main table .title {
+        display: block
+    }
+    .card-main table .title::before {
+        display: block
+    }
+    .card-main table .actions .desktop {
+        display: block
+    }
+    .card-main table .actions .mobile {
+        display: none
+    }
+    .card-main .active td {
+        display: block
+    }
+    .card-main .active .title::before {
+        content: "\f0d7"
+    }
+    .card-main .checkbox {
+        display: none !important
+    }
+}
+.card-secundary {
+    padding: 0 0 3rem;
+    margin: 0 auto 2rem
+}
+.card-secundary h2 {
+    margin: 0;
+    border-bottom: 1px solid #F5F8FA;
+    padding: 1rem 2rem;
+    font-size: 1.5rem
+}
+.card-secundary .wrapper {
+    padding-top: 1.5rem;
+    padding-bottom: 1.5rem;
+    max-width: 861px
+}
+.viewPrayer .shadow {
+    visibility: hidden;
+    opacity: 0;
+    -webkit-transition: visibility 0s, opacity 0.5s linear;
+    transition: visibility 0s, opacity 0.5s linear;
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    background-color: rgba(4, 26, 56, 0.5)
+}
+.viewPrayer .content {
+    position: fixed;
+    height: 100vh;
+    width: 50%;
+    padding: 0 2rem 2rem;
+    overflow-y: scroll;
+    top: 0;
+    right: 0;
+    left: 100vw;
+    left: calc(100vw - 0.5rem);
+    background-color: #fff;
+    border-left: 0.5rem solid #0577FF;
+    -webkit-transition: left 0.5s ease, right 0.5s ease;
+    transition: left 0.5s ease, right 0.5s ease;
+    cursor: pointer
+}
+.viewPrayer .content:hover {
+    left: 95vw
+}
+@media only screen and (max-width: 1024px) {
+    .viewPrayer .content {
+        width: 80vw
+    }
+}
+.viewPrayer.active .shadow {
+    visibility: visible;
+    opacity: 1
+}
+.viewPrayer.active .content {
+    cursor: initial;
+    left: 50vw
+}
+@media only screen and (max-width: 1024px) {
+    .viewPrayer.active .content {
+        left: 20vw
+    }
+}
+.viewPrayer form input {
+    border: none
+}
+.viewPrayer form input:focus {
+    border: 1px solid #cdcdcd
+}
+.viewPrayer form>.controllers {
+    text-align: right
+}
+.viewPrayer form div .edit {
+    float: right;
+    margin: -2.5em 0 0
+}
+.viewPrayer form div .edit::after {
+    content: "\f040"
+}
+.viewPrayer form div .controllers {
+    display: none;
+    padding: 1rem 0 0;
+    text-align: right
+}
+.viewPrayer form div .controllers button {
+    text-transform: uppercase
+}
+.custom-toast {
+    background: white;
+    height: 65px;
+    position: fixed;
+    width: 100%;
+    max-width: 600px;
+    left: 0;
+    right: 0;
+    -webkit-box-shadow: 0px 0px 10px 0px #858585;
+    box-shadow: 0px 0px 10px 0px #858585;
+    border-radius: 5px;
+    margin: 0 auto;
+    bottom: 30px;
+    line-height: 65px;
+    padding: 0 15px
+}
+.custom-toast .message {
+    display: inline-block
+}
+.pagination {
+    text-align: center;
+    display: block
+}
+.pagination ul {
+    display: inline-block;
+    list-style: none;
+    padding: 0;
+    margin: 1rem 0 1rem 10rem
+}
+.pagination li {
+    display: inline-block
+}
+.pagination button {
+    color: #636B6F;
+    background-color: transparent;
+    padding: 0em 0.5em;
+    line-height: 2.5em;
+    min-width: 2.5em;
+    border-radius: 1.5em
+}
+.pagination .active {
+    background-color: #0577FF;
+    color: #fff
+}
+.pagination .perPage {
+    float: right;
+    margin: 1.5rem 0 0
+}
+.pagination .perPage label {
+    display: inline-block;
+    color: #636B6F;
+    margin: 0 1em
+}
+.pagination .perPage select {
+    display: inline-block;
+    width: 7em
+}
+@media only screen and (max-width: 1024px) {
+    .pagination ul {
+        margin-left: 0
+    }
+    .pagination .perPage {
+        display: inline-block;
+        width: 100%;
+        float: none;
+        margin: 1rem 0 3rem
+    }
+}
+@media only screen and (max-width: 768px) {
+    .planner-service-edit .wrapper {
+        padding: 0
+    }
+}
+.planner-service-edit .close-planner-edit {
+    position: absolute;
+    right: 1rem;
+    background: transparent;
+    color: #636B6F;
+    font-size: 2rem
+}
+@media (min-width: 768px) {
+    .planner-service-edit .close-planner-edit {
+        right: 3rem
+    }
+}
+.planner-service-edit .shadow {
+    visibility: hidden;
+    opacity: 0;
+    -webkit-transition: visibility 0s, opacity 0.5s linear;
+    transition: visibility 0s, opacity 0.5s linear;
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    background-color: rgba(4, 26, 56, 0.5)
+}
+.planner-service-edit .content {
+    position: fixed;
+    height: 100vh;
+    width: 100%;
+    padding: 0 2rem 2rem;
+    overflow-y: scroll;
+    top: 0;
+    right: 0;
+    left: 100vw;
+    left: calc(100vw - 0.5rem);
+    background-color: #F5F8FA;
+    border-left: 0.5rem solid #0577FF;
+    -webkit-transition: left 0.5s ease, right 0.5s ease;
+    transition: left 0.5s ease, right 0.5s ease;
+    cursor: pointer
+}
+.planner-service-edit .content:hover {
+    left: 95vw
+}
+@media only screen and (max-width: 1024px) {
+    .planner-service-edit .content {
+        width: 100vw
+    }
+}
+.planner-service-edit.active .shadow {
+    visibility: visible;
+    opacity: 1
+}
+.planner-service-edit.active .content {
+    cursor: initial;
+    left: 0
+}
+@media only screen and (max-width: 1024px) {
+    .planner-service-edit.active .content {
+        left: 0vw
+    }
+}
+.planner-service-edit .form>div {
+    display: inline-block
+}
+.planner-service-edit .form input,
+.planner-service-edit .form select {
+    width: 15rem;
+    height: 2.5rem;
+    padding: 0.5rem;
+    line-height: 1em;
+    font-size: 1rem;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box
+}
+.planner-service-edit .form>.controllers {
+    display: block;
+    text-align: center;
+    pointer-events: initial
+}
+.planner-service-edit .form>.controllers button {
+    min-width: 10em
+}
+.planner-service-edit .plan-edit {
+    display: block;
+    width: 100%
+}
+.planner-service-edit .plan-edit p {
+    max-width: 40em
+}
+.planner-service-edit .plan-edit .container {
+    position: relative;
+    margin: 3rem 0;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    height: 90vh;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap
+}
+@media only screen and (max-width: 768px) {
+    .planner-service-edit .plan-edit .container>div {
+        height: calc(100% - 2.5rem)
+    }
+}
+@media (min-width: 768px) {
+    .planner-service-edit .plan-edit .container {
+        -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
+        height: 90vh;
+        max-height: 90vh
+    }
+}
+.planner-service-edit .plan-edit .container .plan-edit-nav {
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin-top: -10px;
+    height: 5rem
+}
+.planner-service-edit .plan-edit .container .plan-edit-nav button {
+    background: #EFF0F1;
+    width: 50%;
+    display: inline-block;
+    border-radius: 0;
+    color: #636B6F
+}
+.planner-service-edit .plan-edit .container .plan-edit-nav button.active {
+    background: #E1E3E4
+}
+.planner-service-edit .plan-edit .container .plan-edit-nav button .fa {
+    display: block;
+    font-size: 1.5rem;
+    margin-bottom: 0.2em
+}
+.planner-service-edit .plan-edit .container .plan-edit-nav button:first-of-type {
+    border-bottom-left-radius: 5px
+}
+.planner-service-edit .plan-edit .container .plan-edit-nav button:last-of-type {
+    border-bottom-right-radius: 5px
+}
+@media (min-width: 768px) {
+    .planner-service-edit .plan-edit .container .plan-edit-nav {
+        display: none
+    }
+}
+.planner-service-edit .plan-edit .container .categories {
+    display: none;
+    width: 20%;
+    position: relative
+}
+@media only screen and (max-width: 1024px) {
+    .planner-service-edit .plan-edit .container .categories {
+        position: absolute;
+        top: 5rem;
+        left: 1rem;
+        width: calc(50% - 4rem);
+        height: calc(100% - 5rem);
+        background-color: white
+    }
+    .planner-service-edit .plan-edit .container .categories.active {
+        display: block
+    }
+}
+@media only screen and (max-width: 768px) {
+    .planner-service-edit .plan-edit .container .categories {
+        position: absolute;
+        top: 5rem;
+        left: 0rem;
+        width: 100%;
+        height: calc(100% - 3rem);
+        background-color: white
+    }
+    .planner-service-edit .plan-edit .container .categories.active {
+        display: block
+    }
+}
+@media (min-width: 1024px) {
+    .planner-service-edit .plan-edit .container .categories {
+        display: block
+    }
+}
+.planner-service-edit .plan-edit .container .categories ul {
+    width: 100%;
+    list-style: none;
+    padding: 0rem 1rem;
+    margin: 0;
+    overflow-y: scroll
+}
+@media only screen and (max-width: 1024px) {
+    .planner-service-edit .plan-edit .container .categories ul {
+        padding: 0rem 2rem
+    }
+}
+.planner-service-edit .plan-edit .container .categories li {
+    margin: 0 0 1rem
+}
+.planner-service-edit .plan-edit .container .categories a {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-line-pack: center;
+    align-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    background-color: #fff;
+    border-radius: 5px;
+    padding: 1em 1.5em;
+    -webkit-box-shadow: 0px 0px 10px rgba(99, 107, 111, 0.3);
+    box-shadow: 0px 0px 10px rgba(99, 107, 111, 0.3);
+    text-decoration: none;
+    text-overflow: ellipsis
+}
+@media only screen and (max-width: 1024px) {
+    .planner-service-edit .plan-edit .container .categories a {
+        -webkit-box-shadow: none;
+        box-shadow: none
+    }
+}
+.planner-service-edit .plan-edit .container .categories a svg,
+.planner-service-edit .plan-edit .container .categories a img {
+    display: inline-block;
+    vertical-align: middle;
+    margin: 0 1rem 0 0;
+    height: 1.7em
+}
+.planner-service-edit .plan-edit .container .categories a .icon-active {
+    display: none
+}
+.planner-service-edit .plan-edit .container .categories a.active {
+    position: relative;
+    background-color: #0577FF;
+    color: #fff
+}
+.planner-service-edit .plan-edit .container .categories a.active::after {
+    position: absolute;
+    top: 1em;
+    right: 1rem;
+    margin: 0.5em 0 0;
+    content: "\f054"
+}
+@media only screen and (max-width: 1024px) {
+    .planner-service-edit .plan-edit .container .categories a.active::after {
+        content: "\f00c"
+    }
+}
+.planner-service-edit .plan-edit .container .categories a.active .icon-active {
+    display: inline-block
+}
+.planner-service-edit .plan-edit .container .categories a.active .icon-inactive {
+    display: none
+}
+.planner-service-edit .plan-edit .container .categories .scroll-overlay {
+    display: none;
+    position: absolute;
+    width: 100%;
+    height: 10rem;
+    bottom: 0;
+    margin: 0;
+    left: 0;
+    background: -webkit-gradient(linear, left top, left bottom, from(rgba(243, 247, 250, 0)), to(#F3F7FA));
+    background: linear-gradient(180deg, rgba(243, 247, 250, 0) 0%, #F3F7FA 100%);
+    pointer-events: none
+}
+.planner-service-edit .plan-edit .container .edit {
+    display: none;
+    width: 100%;
+    background-color: #fff;
+    border-radius: 5px;
+    -webkit-box-shadow: 0px 0px 15px rgba(99, 107, 111, 0.3);
+    box-shadow: 0px 0px 15px rgba(99, 107, 111, 0.3);
+    margin: 0;
+    padding: 0 2rem 2rem
+}
+.planner-service-edit .plan-edit .container .edit.active {
+    display: block !important
+}
+@media (min-width: 768px) {
+    .planner-service-edit .plan-edit .container .edit {
+        width: 50%;
+        display: block;
+        margin: 0 1rem
+    }
+}
+@media (min-width: 1024px) {
+    .planner-service-edit .plan-edit .container .edit {
+        width: 40%
+    }
+}
+.planner-service-edit .plan-edit .container .edit .add-new {
+    display: none
+}
+.planner-service-edit .plan-edit .container .edit .add-new button {
+    width: 49.2%
+}
+.planner-service-edit .plan-edit .container .edit.edit-add-new .add-existing {
+    display: none
+}
+.planner-service-edit .plan-edit .container .edit.edit-add-new .add-new {
+    display: block
+}
+.planner-service-edit .plan-edit .container .edit h3 {
+    text-align: center;
+    font-size: 1.2rem
+}
+@media only screen and (max-width: 1024px) {
+    .planner-service-edit .plan-edit .container .edit h3 {
+        border-bottom: 1px solid #636B6F;
+        cursor: pointer;
+        padding: 0 0 1em
+    }
+    .planner-service-edit .plan-edit .container .edit h3::after {
+        margin: 0 0 0 1rem;
+        display: inline-block;
+        font: normal normal normal 14px/1 FontAwesome;
+        font-size: inherit;
+        text-rendering: auto;
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale;
+        content: "\f0d7"
+    }
+    .planner-service-edit .plan-edit .container .edit h3.active::after {
+        content: "\f00d"
+    }
+}
+.planner-service-edit .plan-edit .container .edit h3 img {
+    vertical-align: middle;
+    height: 1em;
+    margin: 0 1em 0 0
+}
+.planner-service-edit .plan-edit .container .edit button {
+    width: 100%
+}
+.planner-service-edit .plan-edit .container .edit input,
+.planner-service-edit .plan-edit .container .edit select {
+    width: 100%;
+    height: 3rem;
+    margin: 0.5rem 0
+}
+.planner-service-edit .plan-edit .container .edit ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    height: calc(90vh - 20rem);
+    overflow-y: scroll
+}
+.planner-service-edit .plan-edit .container .edit li.planner-edit-item {
+    font-size: 0.9rem;
+    color: #636B6F;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: stretch;
+    -ms-flex-align: stretch;
+    align-items: stretch;
+    -webkit-box-pack: unset;
+    -ms-flex-pack: unset;
+    justify-content: unset;
+    margin: 0 0 1rem;
+    border: 1px solid #e7e9ea;
+    border-radius: 5px
+}
+.planner-service-edit .plan-edit .container .edit li.planner-edit-item * {
+    padding: 0 0.5em
+}
+.planner-service-edit .plan-edit .container .edit li.planner-edit-item>span {
+    display: none;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    font-size: 1.3rem
+}
+@media (min-width: 1024px) {
+    .planner-service-edit .plan-edit .container .edit li.planner-edit-item>span {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex
+    }
+}
+.planner-service-edit .plan-edit .container .edit li.planner-edit-item>div {
+    -webkit-box-flex: 1;
+    -ms-flex-positive: 1;
+    flex-grow: 1;
+    padding: 0 0 1em
+}
+.planner-service-edit .plan-edit .container .edit li.planner-edit-item>div p {
+    margin: 0.5em 0 0.3em;
+    font-size: 1.2rem
+}
+.planner-service-edit .plan-edit .container .edit li.planner-edit-item>div span {
+    display: block
+}
+.planner-service-edit .plan-edit .container .edit li.planner-edit-item a,
+.planner-service-edit .plan-edit .container .edit li.planner-edit-item button {
+    width: auto;
+    margin: 0;
+    text-align: center;
+    padding: 1em 1em;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    background-color: #0577FF;
+    border-radius: 0 5px 5px 0;
+    color: #fff;
+    text-decoration: none
+}
+.planner-service-edit .plan-edit .container .edit li.planner-edit-item a:hover,
+.planner-service-edit .plan-edit .container .edit li.planner-edit-item button:hover {
+    background-color: #006beb
+}
+.planner-service-edit .plan-edit .container .service {
+    display: none;
+    width: 100%;
+    background-color: #fff;
+    border-radius: 5px;
+    -webkit-box-shadow: 0px 0px 15px rgba(99, 107, 111, 0.3);
+    box-shadow: 0px 0px 15px rgba(99, 107, 111, 0.3);
+    margin: 0;
+    padding: 0 2rem 2rem
+}
+.planner-service-edit .plan-edit .container .service.active {
+    display: block !important
+}
+@media (min-width: 768px) {
+    .planner-service-edit .plan-edit .container .service {
+        margin: 0 1rem;
+        display: block;
+        width: 50%
+    }
+}
+@media (min-width: 1024px) {
+    .planner-service-edit .plan-edit .container .service {
+        width: 40%
+    }
+}
+.planner-service-edit .plan-edit .container .service h3 {
+    text-align: center;
+    border-bottom: 1px solid #636B6F;
+    padding: 0 0 1em
+}
+.planner-service-edit .plan-edit .container .service>ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    height: calc(90vh - 10rem);
+    overflow: scroll
+}
+.planner-service-edit .plan-edit .container .service li.planner-services-item {
+    margin: 0 0 0.5rem
+}
+.planner-service-edit .plan-edit .container .service li.planner-services-item .card,
+.planner-service-edit .plan-edit .container .service li.planner-services-item .card-main,
+.planner-service-edit .plan-edit .container .service li.planner-services-item .card-secundary,
+.planner-service-edit .plan-edit .container .service li.planner-services-item body.dashboard .tools article,
+body.dashboard .tools .planner-service-edit .plan-edit .container .service li.planner-services-item article,
+.planner-service-edit .plan-edit .container .service li.planner-services-item body.dashboard section.help,
+body.dashboard .planner-service-edit .plan-edit .container .service li.planner-services-item section.help {
+    padding: 0;
+    width: 100%;
+    position: relative;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    border: 1px solid #e7e9ea;
+    border-radius: 5px;
+    z-index: 1
+}
+.planner-service-edit .plan-edit .container .service li.planner-services-item .card button,
+.planner-service-edit .plan-edit .container .service li.planner-services-item .card-main button,
+.planner-service-edit .plan-edit .container .service li.planner-services-item .card-secundary button,
+.planner-service-edit .plan-edit .container .service li.planner-services-item body.dashboard .tools article button,
+body.dashboard .tools .planner-service-edit .plan-edit .container .service li.planner-services-item article button,
+.planner-service-edit .plan-edit .container .service li.planner-services-item body.dashboard section.help button,
+body.dashboard .planner-service-edit .plan-edit .container .service li.planner-services-item section.help button {
+    padding: 1em;
+    background-color: transparent;
+    color: #636B6F
+}
+.planner-service-edit .plan-edit .container .service li.planner-services-item .card p,
+.planner-service-edit .plan-edit .container .service li.planner-services-item .card-main p,
+.planner-service-edit .plan-edit .container .service li.planner-services-item .card-secundary p,
+.planner-service-edit .plan-edit .container .service li.planner-services-item body.dashboard .tools article p,
+body.dashboard .tools .planner-service-edit .plan-edit .container .service li.planner-services-item article p,
+.planner-service-edit .plan-edit .container .service li.planner-services-item body.dashboard section.help p,
+body.dashboard .planner-service-edit .plan-edit .container .service li.planner-services-item section.help p {
+    padding: 0 1rem;
+    -webkit-box-flex: 1;
+    -ms-flex-positive: 1;
+    flex-grow: 1;
+    padding-right: 0.5em
+}
+.planner-service-edit .plan-edit .container .service li.planner-services-item .card p .contributor,
+.planner-service-edit .plan-edit .container .service li.planner-services-item .card-main p .contributor,
+.planner-service-edit .plan-edit .container .service li.planner-services-item .card-secundary p .contributor,
+.planner-service-edit .plan-edit .container .service li.planner-services-item body.dashboard .tools article p .contributor,
+body.dashboard .tools .planner-service-edit .plan-edit .container .service li.planner-services-item article p .contributor,
+.planner-service-edit .plan-edit .container .service li.planner-services-item body.dashboard section.help p .contributor,
+body.dashboard .planner-service-edit .plan-edit .container .service li.planner-services-item section.help p .contributor {
+    display: block;
+    color: #09C851
+}
+.planner-service-edit .plan-edit .container .service li.planner-services-item .card p img,
+.planner-service-edit .plan-edit .container .service li.planner-services-item .card-main p img,
+.planner-service-edit .plan-edit .container .service li.planner-services-item .card-secundary p img,
+.planner-service-edit .plan-edit .container .service li.planner-services-item body.dashboard .tools article p img,
+body.dashboard .tools .planner-service-edit .plan-edit .container .service li.planner-services-item article p img,
+.planner-service-edit .plan-edit .container .service li.planner-services-item body.dashboard section.help p img,
+body.dashboard .planner-service-edit .plan-edit .container .service li.planner-services-item section.help p img {
+    vertical-align: middle;
+    height: 1em;
+    margin: 0 1em 0 0
+}
+.planner-service-edit .plan-edit .container .service li.planner-services-item .card p strong,
+.planner-service-edit .plan-edit .container .service li.planner-services-item .card-main p strong,
+.planner-service-edit .plan-edit .container .service li.planner-services-item .card-secundary p strong,
+.planner-service-edit .plan-edit .container .service li.planner-services-item body.dashboard .tools article p strong,
+body.dashboard .tools .planner-service-edit .plan-edit .container .service li.planner-services-item article p strong,
+.planner-service-edit .plan-edit .container .service li.planner-services-item body.dashboard section.help p strong,
+body.dashboard .planner-service-edit .plan-edit .container .service li.planner-services-item section.help p strong {
+    font-weight: 700
+}
+.planner-service-edit .plan-edit .container .service li.planner-services-item .card .button-drag,
+.planner-service-edit .plan-edit .container .service li.planner-services-item .card-main .button-drag,
+.planner-service-edit .plan-edit .container .service li.planner-services-item .card-secundary .button-drag,
+.planner-service-edit .plan-edit .container .service li.planner-services-item body.dashboard .tools article .button-drag,
+body.dashboard .tools .planner-service-edit .plan-edit .container .service li.planner-services-item article .button-drag,
+.planner-service-edit .plan-edit .container .service li.planner-services-item body.dashboard section.help .button-drag,
+body.dashboard .planner-service-edit .plan-edit .container .service li.planner-services-item section.help .button-drag {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    background-color: #0577FF;
+    color: #fff;
+    padding: 0.5em;
+    border-radius: 0 5px 5px 0;
+    cursor: move
+}
+.planner-service-edit .plan-edit .container .service li.planner-services-item .card .button-drag::before,
+.planner-service-edit .plan-edit .container .service li.planner-services-item .card-main .button-drag::before,
+.planner-service-edit .plan-edit .container .service li.planner-services-item .card-secundary .button-drag::before,
+.planner-service-edit .plan-edit .container .service li.planner-services-item body.dashboard .tools article .button-drag::before,
+body.dashboard .tools .planner-service-edit .plan-edit .container .service li.planner-services-item article .button-drag::before,
+.planner-service-edit .plan-edit .container .service li.planner-services-item body.dashboard section.help .button-drag::before,
+body.dashboard .planner-service-edit .plan-edit .container .service li.planner-services-item section.help .button-drag::before {
+    padding: 0.3em 0 0;
+    content: url("/assets/images/drag-icon.svg")
+}
+.planner-service-edit .plan-edit .container .service li.planner-services-item .dropdown {
+    position: relative;
+    display: none;
+    border: 1px solid #e7e9ea;
+    margin: -1px 2rem 0 1rem;
+    padding: 0.5rem 2rem 1rem;
+    -webkit-box-shadow: 0px 0px 7px rgba(0, 0, 0, 0.1);
+    box-shadow: 0px 0px 7px rgba(0, 0, 0, 0.1)
+}
+.planner-service-edit .plan-edit .container .service li.planner-services-item .dropdown.active {
+    display: block
+}
+.planner-service-edit .plan-edit .container .service li.planner-services-item .dropdown input {
+    width: 100%;
+    margin: 0 0 0.5rem
+}
+.planner-service-edit .plan-edit .container .service li.planner-services-item .dropdown .autocomplete {
+    display: none;
+    margin: -3px 0 0;
+    width: 85%;
+    padding: 0 1rem;
+    position: absolute;
+    z-index: 3;
+    background: #fff;
+    -webkit-box-shadow: 0px 0px 7px rgba(0, 0, 0, 0.1);
+    box-shadow: 0px 0px 7px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+    padding: 1rem;
+    list-style: none
+}
+.planner-service-edit .plan-edit .container .service li.planner-services-item .dropdown .autocomplete li {
+    padding: 0.5rem 0
+}
+.planner-service-edit .plan-edit .container .service li.planner-services-item .dropdown input:focus+.autocomplete {
+    display: block
+}
+.planner-service-edit .plan-edit .container .service li.planner-services-item .dropdown button {
+    padding: 0.7rem;
+    width: 49%
+}
+body.login-layout .page-content {
+    margin: 0;
+    width: 100% !important
+}
+body.login-layout .wrapper {
+    width: 99%;
+    max-width: 650px
+}
+body.login-layout .main-header img {
+    width: 90%;
+    max-width: 400px;
+    display: block;
+    margin: 3rem auto
+}
+body.login-layout .main-header nav ul {
+    list-style: none;
+    padding: 0;
+    text-align: center
+}
+body.login-layout .main-header nav li {
+    display: inline-block;
+    margin: 0 1em
+}
+body.login-layout .main-header nav a {
+    text-decoration: none
+}
+body.login-layout .main-header nav a.active {
+    background-color: #0577FF;
+    color: #fff;
+    border-radius: 1em;
+    padding: 0.3em 1em
+}
+body.login-layout .form>div,
+body.login-layout .form fieldset>div {
+    width: 100%;
+    margin: 0 0 2rem
+}
+body.login-layout .form>div p,
+body.login-layout .form fieldset>div p {
+    padding: 0 1em
+}
+body.login-layout .form div.checkbox {
+    width: 100%;
+    display: inline-block
+}
+body.login-layout .form div.checkbox input,
+body.login-layout .form div.checkbox label {
+    display: inline-block
+}
+body.login-layout .form div.checkbox label {
+    font-weight: 400;
+    margin-left: 1em
+}
+body.login-layout .form .forgot {
+    float: right
+}
+body.login-layout .form .buttons {
+    text-align: right
+}
+body.login-layout .form .buttons button {
+    min-width: 10em;
+    margin: 0 0 0.5em 0.5em
+}
+@media only screen and (max-width: 768px) {
+    body.login-layout .form .buttons button {
+        width: 49%;
+        margin: 0 0 0.5em 0
+    }
+}
+body.login-layout .form fieldset {
+    margin: 4rem 0 0;
+    padding: 2rem 0 0;
+    border: none;
+    border-top: 1px solid #636B6F
+}
+body.login-layout .form fieldset legend {
+    text-align: center;
+    padding: 0 0.5em
+}
+body.dashboard .tools {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between
+}
+@media only screen and (max-width: 1200px) {
+    body.dashboard .tools {
+        -ms-flex-pack: distribute;
+        justify-content: space-around
+    }
+}
+body.dashboard .tools article {
+    width: calc(33.33% - 2rem);
+    margin: 0 0.5rem 2rem 0;
+    text-align: center
+}
+@media only screen and (max-width: 1200px) {
+    body.dashboard .tools article {
+        width: calc(50% - 2rem)
+    }
+}
+@media only screen and (max-width: 940px) {
+    body.dashboard .tools article {
+        width: 100%;
+        max-width: 400px
+    }
+}
+body.dashboard .tools article h2 {
+    font-size: 1.5rem;
+    margin: 0.7em 0
+}
+body.dashboard .tools article p {
+    text-align: left;
+    min-height: 6em
+}
+body.dashboard .tools article strong {
+    display: block;
+    text-align: left;
+    color: #636B6F;
+    margin: 0.5em 0
+}
+body.dashboard .tools article>a {
+    text-decoration: none
+}
+body.dashboard .tools article>a:hover {
+    color: #000
+}
+body.dashboard .tools article>a:hover * {
+    color: #000
+}
+body.dashboard .tools article .public-link {
+    text-align: left;
+    word-wrap: break-word;
+    word-break: break-all;
+    text-decoration: underline
+}
+body.dashboard .tools article ul {
+    list-style: none;
+    margin: 0;
+    padding: 0
+}
+body.dashboard .tools article ul li {
+    display: inline-block;
+    width: 49%;
+    padding: 2rem 1rem
+}
+body.dashboard .tools article ul li a {
+    text-align: center;
+    text-decoration: none
+}
+body.dashboard .tools article ul li a:hover {
+    color: #333739
+}
+body.dashboard .tools article ul li i {
+    font-size: 2rem;
+    display: block;
+    margin: 0 0 0.5rem
+}
+body.dashboard section.help h2 {
+    font-size: 1.5rem;
+    margin: 0
+}
+body.dashboard section.help ul {
+    list-style: none;
+    padding: 0
+}
+body.settings .form {
+    width: 95%;
+    max-width: 578px;
+    margin: 0 auto
+}
+body.settings .buttons {
+    margin: 0 auto;
+    text-align: center
+}
+body.settings .buttons button {
+    min-width: 10rem
+}
+body.settings .upload-image label {
+    width: 100%
+}
+body.settings .upload-image .dropbox {
+    border: 1px solid #cdcdcd;
+    border-radius: 5px;
+    width: 400px;
+    display: inline-block;
+    position: relative
+}
+@media only screen and (max-width: 900px) {
+    body.settings .upload-image .dropbox {
+        width: 100%
+    }
+}
+body.settings .upload-image .dropbox input {
+    vertical-align: top;
+    display: inline-block;
+    height: 7rem;
+    position: relative;
+    width: 100%;
+    opacity: 0
+}
+body.settings .upload-image .dropbox p {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    line-height: 1em;
+    text-align: center
+}
+body.settings .upload-image .dropbox p i {
+    margin: 1rem 0 0;
+    display: block;
+    width: 100%;
+    text-align: center;
+    font-size: 2rem
+}
+body.settings .upload-image .dropbox p span {
+    margin: -2rem 0;
+    display: block
+}
+body.settings .upload-image img {
+    vertical-align: top;
+    display: inline-block;
+    background: #F5F8FA;
+    width: 7rem;
+    height: 7rem
+}
+@media only screen and (max-width: 900px) {
+    body.settings .upload-image img {
+        display: block;
+        margin: 0 auto 1rem
+    }
+}
+body.prayers-settings .categories .form>div {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center
+}
+body.prayers-settings .categories .form>div button {
+    margin: 0 0 0 1rem
+}
+body.prayers-settings .categories .form ul {
+    list-style: none;
+    padding: 0 1rem;
+    margin: 1rem 0
+}
+body.prayers-settings .categories .form ul li {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    padding: 0 0 0 1.5rem;
+    margin: 0 0 1rem;
+    background-color: #F5F8FA;
+    border-radius: 5px;
+    cursor: move
+}
+body.prayers-settings .categories .form ul li.ghost {
+    opacity: 0.1
+}
+body.prayers-settings .categories .form ul .actions {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex
+}
+body.prayers-settings .categories .form ul .delete {
+    background-color: transparent;
+    padding: 0 1rem
+}
+body.prayers-settings .categories .form ul .drag {
+    border-radius: 0 5px 5px 0;
+    margin: 0 0 0 1rem;
+    background-color: #0577FF;
+    padding: 1rem 0.5rem
+}
+body.prayers-settings .categories .form ul .drag:active {
+    background-color: #005fd1
+}
+body.prayers-settings .archive p {
+    text-align: center
+}
+body.prayers-settings .archive input {
+    display: block;
+    max-width: 10rem;
+    margin: 0 auto
+}
+body.prayers-settings .handout .form {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex
+}
+@media only screen and (max-width: 768px) {
+    body.prayers-settings .handout .form {
+        -ms-flex-pack: distribute;
+        justify-content: space-around
+    }
+    body.prayers-settings .handout .form div label img {
+        height: 3rem
+    }
+}
+@media screen and (max-width: 600px) {
+    body.prayers-settings .handout .form {
+        -ms-flex-wrap: wrap;
+        flex-wrap: wrap
+    }
+    body.prayers-settings .handout .form div {
+        width: 100%
+    }
+    body.prayers-settings .handout .form div label img {
+        height: 5rem
+    }
+}
+body.prayers-settings .handout .form div {
+    text-align: center
+}
+body.prayers-settings .handout .form input {
+    display: none
+}
+body.prayers-settings .handout .form input:checked+label {
+    border: 1px solid #e7e9ea;
+    background-color: #F5F8FA
+}
+body.prayers-settings .handout .form label {
+    display: inline-block;
+    text-align: center;
+    padding: 1.5rem 1rem;
+    margin: 0 0.5rem;
+    border-radius: 5px;
+    border: 1px solid rgba(99, 107, 111, 0)
+}
+body.prayers-settings .handout .form label img {
+    height: 5rem
+}
+body.prayers-settings .handout .form label span {
+    display: inline-block;
+    width: 100%
+}
+
+
+
+
+
+
+body.login-layout .form .forgot {
+    margin-top: 7px;
+}
+.checkbox {
+    padding-left: 20px; 
+	margin-bottom: 30px;
+}
+.checkbox label {
+    display: inline-block;
+    position: relative;
+    padding-left: 15px;
+    padding-top: 2px;
+}
+.checkbox label::before {
+    content: "";
+    display: inline-block;
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    left: 0;
+    margin-left: -20px;
+    border: none;
+    border-radius: 20%;
+    background-color: #fff;
+    -webkit-transition: border 0.15s ease-in-out, color 0.15s ease-in-out;
+    -o-transition: border 0.15s ease-in-out, color 0.15s ease-in-out;
+    transition: border 0.15s ease-in-out, color 0.15s ease-in-out;
+    box-shadow: 0 0px 18px #eee;
+    top: 0px;
+    border: 2px solid #ddd;
+}
+.checkbox label::after {
+    display: inline-block;
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    left: 0px;
+    top: 0px;
+    margin-left: -20px;
+    padding-left: 5px;
+    padding-top: 5px;
+    font-size: 11px;
+    color: #fff;
+    background: #636B6F!important;
+    border-radius: 20%;
+}
+.checkbox input[type="checkbox"] {
+    opacity: 0; }
+.checkbox input[type="checkbox"]:focus + label::before {
+    outline: thin dotted;
+    outline: 5px auto -webkit-focus-ring-color;
+    outline-offset: -2px; }
+.checkbox input[type="checkbox"]:checked + label::after {
+    font-family: 'FontAwesome';
+    content: "\f00c"; }
+.checkbox input[type="checkbox"]:disabled + label {
+    opacity: 0.65; }
+.checkbox input[type="checkbox"]:disabled + label::before {
+    background-color: #eeeeee;
+    cursor: not-allowed; }
+.checkbox.checkbox-circle label::before {
+    border-radius: 50%; }
+.checkbox.checkbox-inline {
+    margin-top: 0; }
+
+.checkbox-primary input[type="checkbox"]:checked + label::before {
+    background-color: #428bca;
+    border-color: #428bca; }
+.checkbox-primary input[type="checkbox"]:checked + label::after {
+    color: #fff; }
+
+.checkbox-danger input[type="checkbox"]:checked + label::before {
+    background-color: #d9534f;
+    border-color: #d9534f; }
+.checkbox-danger input[type="checkbox"]:checked + label::after {
+    color: #fff; }
+
+.checkbox-info input[type="checkbox"]:checked + label::before {
+    background-color: #5bc0de;
+    border-color: #5bc0de; }
+.checkbox-info input[type="checkbox"]:checked + label::after {
+    color: #fff; }
+
+.checkbox-warning input[type="checkbox"]:checked + label::before {
+    background-color: #f0ad4e;
+    border-color: #f0ad4e; }
+.checkbox-warning input[type="checkbox"]:checked + label::after {
+    color: #fff; }
+
+.checkbox-success input[type="checkbox"]:checked + label::before {
+    background-color: #5cb85c;
+    border-color: #5cb85c; }
+.checkbox-success input[type="checkbox"]:checked + label::after {
+    color: #fff; }
+.checkbox.check_remember {
+    margin-top: 20px;
+}
+
+.padd_0 {
+	padding:0px !important;
+}
+.margin-left--15 {
+	margin-left: -15px !important;
+}
+.card h3.text-center {
+	margin-bottom: 30px;
+    font-weight: bold;
+}
+i.tree-indicator {
+    position: absolute;
+    right: 15px;
+    top: 17px;
+}
+li.tree-branch {
+    position: relative;
+}
+.table-bordered>tbody>tr>td, .table-bordered>tbody>tr>th, .table-bordered>tfoot>tr>td, .table-bordered>tfoot>tr>th, .table-bordered>thead>tr>td, .table-bordered>thead>tr>th {
+	border: none !important;
+}
+table.dataTable thead th, table.dataTable thead td {
+    padding: 30px 10px !important; 
+}
+#mytable .sorting:after {
+    font-family: FontAwesome;
+    font-weight: normal;
+    font-style: normal;
+    text-decoration: inherit;
+    -webkit-font-smoothing: antialiased;
+    filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=30);
+    opacity: 0.3;
+    content: "\f0dc";
+}
+table#mytable {
+    border: 1px solid #ddd;
+}
+.table>tbody>tr>td, .table>tbody>tr>th, .table>tfoot>tr>td, .table>tfoot>tr>th, .table>thead>tr>td, .table>thead>tr>th {
+	padding: 25px 10px !important;
+	border-top: none !important;
+}
+select.changeStatus {
+    width: 165px;
+}
+a.btn.btn-back {
+    background: #0577FF;
+    border: transparent;
+    margin-bottom: 30px;
+}
+select.form-control {
+    -webkit-appearance: menulist-button;
+}
+a.btn.btn-submit {
+    background: #000;
+    border: transparent;
+    font-size: 15px;
+    text-transform: uppercase;
+    padding: 10px 45px;
+}
+i.fa.fa-gavel , i.fa.fa-sliders , i.fa.fa-user-circle-o , i.fa.fa-book , i.fa.fa-plus-circle , i.fa.fa-envelope {
+    display: inline-block !important;
+    margin-right: 10px;
+}
+.modal-header {
+    background: #0577FF;
+    color: #fff;
+}
+.modal-header .close {
+    font-size: 18px;
+    margin-top: 1px;
+}
+.modal-header .close:hover {
+    background: transparent;
+    color: #fff;
+}
+.modal a.btn.btn-back {
+    margin-bottom: 0px;
+}
+.wrapper_page {
+    width: 100%;
+    max-width: 70%;
+    margin: 0 auto;
+}
+.note-toolbar-wrapper.panel-default {
+	height: auto !important;
+}
+.note-editor.note-frame.panel .btn-default:hover {
+	color: #fff !important; 
+}
+.note-editor.note-frame.panel button {
+	padding: 0.7rem 0.7rem;
+}
+
+.error {
+    color: red;
+}

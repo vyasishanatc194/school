@@ -1,0 +1,1 @@
+Hello, Thanks for creating account with us. You are just one step away from your account activation. <a href="$link">Click Here</a> For activate your account. Thank you.
