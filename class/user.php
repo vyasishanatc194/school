@@ -35,8 +35,12 @@ class User
     }
     
     public function select_user($where){
-        $sql = $this->_DBOBJ->prepare("SELECT * FROM users WHERE active_token =? and id = ?");
+        print_r($where);
+        $sql = $this->_DBOBJ->prepare("SELECT * FROM users WHERE active_token = ? and id = ?");
         $sql->execute($where);
-        return $sql->fetchColumn();
+        $userExists = $sql->fetchColumn();
+        $sql->debugDumpParams();
+
+        return '';
     }
 }
