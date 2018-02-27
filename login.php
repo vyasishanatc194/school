@@ -20,13 +20,6 @@ include('template/header.php'); ?>
 						<input type="password">
 					</div>
 
-					<!-- <div class="checkbox padd_0 margin-left--15">
-						<input type="checkbox" id="rememberme">
-						<label for="rememberme">Remember Me</label>
-
-						<a href="#" class="forgot">Forgot your password?</a>
-					</div> -->
-
 					<div class="buttons">
 						<button class="button-login" >Login</button>
 					</div>

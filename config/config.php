@@ -14,6 +14,8 @@ $CSS_PATH = 'css/';
 
 $JS_PATH = 'js/';
 
+//Salt for the Php
+$salt = '(*&^DF@$#^@#%';
 
 /* Includes Class */
 

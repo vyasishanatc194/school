@@ -59,7 +59,7 @@ if ($_POST) {
 	}
 	if(count($errorArray) == 0){
 		$userInsert = $_POST;
-		$userInsert['password'] = md5($password);
+		$userInsert['password'] = md5($salt.$password);
 		$activation_token = $userInsert['active_token'] = md5(time());
 		$user_id = $user->insert($userInsert);
 		
@@ -71,7 +71,7 @@ if ($_POST) {
 		include "template/mail/activationmail.php";
 		$myvar = ob_get_clean();
 		$email_message = $myvar;
-		@mail($school_email, 'Activate Your Accoiunt', $email_message, $headers);
+		@mail($school_email, 'Activate Your Account', $email_message, $headers);
 		echo "<script>
 		alert('Check Your Mail for complete your registration with verify your Email Address');
 		window.location.href='login.php';
@@ -79,19 +79,6 @@ if ($_POST) {
 	}
 
 }
-
-// if(isset($_POST) && count($_POST) > 0){
-// 	$message = '';
-// 	if($_POST['school_name'] != '' && $_POST['user_name'] != '' && $_POST['school_email'] != '' && $_POST['password'] != '' && $_POST['c_password'] != ''  ){
-// 		
-// 		var_dump($checkEmail);
-// 	}else{
-// 		$message = "Please Enter proper detail.";
-// 	}
-// 	echo $message;
-// }
-
-
 ?>
 <?php include('template/header.php'); ?>
 <body class="login-layout login">
@@ -134,13 +121,6 @@ if ($_POST) {
 						<label for="">Confirm Password</label>
 						<input type="password" name="c_password" id="c_password" value="<?php echo $c_password; ?>">
 					</div>
-
-					<!-- <div class="checkbox padd_0 margin-left--15">
-						<input type="checkbox" id="rememberme">
-						<label for="rememberme">Remember Me</label>
-
-						<a href="#" class="forgot">Forgot your password?</a>
-					</div> -->
 
 					<div class="buttons">
 						<button class="button-login">Register</button>

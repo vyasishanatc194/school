@@ -25,11 +25,8 @@ if($_GET){
     }
     
 }
-
-
-
-
-include('template/header.php'); ?>
+?>
+<?php include('template/header.php'); ?>
 <body class="login-layout login">
     <main class="page-content" aria-label="Content" id="main-content">
 		<div class="wrapper">
